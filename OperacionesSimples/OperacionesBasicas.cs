@@ -41,7 +41,7 @@ namespace Calculadora
         }
 
         public float Raiz(float entuno, float raiz) {
-            if (raiz >= 0)
+            if (raiz != 0)
             {
                 return (float)Math.Pow(entuno, (1 / raiz));
             }
