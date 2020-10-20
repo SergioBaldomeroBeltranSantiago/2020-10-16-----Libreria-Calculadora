@@ -17,10 +17,9 @@ namespace Calculadora
         }
 
         public double Div(double entuno, double entdos) {
-            double salida=0;
             try
             {
-                salida = entuno / entdos;
+                double salida = entuno / entdos;
                 return salida;
             }
             catch (DivideByZeroException) {
