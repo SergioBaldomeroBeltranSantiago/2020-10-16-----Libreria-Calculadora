@@ -2,7 +2,7 @@
 
 namespace Calculadora
 {
-    public class OperacionesSimples
+    public class OperacionesBasicas
     {
         public double Suma(double entuno, double entdos) {
             return entuno + entdos;
@@ -23,9 +23,9 @@ namespace Calculadora
                 return salida;
             }
             catch (DivideByZeroException) {
-                Console.WriteLine("\nDivision invalida de {0} entre cero\n",entuno);
                 return double.NaN;
             }
         }
+
     }
 }
