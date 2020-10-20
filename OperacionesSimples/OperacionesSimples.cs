@@ -23,7 +23,7 @@ namespace Calculadora
                 return salida;
             }
             catch (DivideByZeroException) {
-                Console.WriteLine("\nDivision invalida de {0} entre cero",entuno);
+                Console.WriteLine("\nDivision invalida de {0} entre cero\n",entuno);
                 return double.NaN;
             }
         }
