@@ -4,26 +4,26 @@ namespace Calculadora
 {
     public class OperacionesBasicas
     {
-        public double Suma(double entuno, double entdos) {
+        public float Suma(float entuno, float entdos) {
             return entuno + entdos;
         }
 
-        public double Resta(double entuno, double entdos) {
+        public float Resta(float entuno, float entdos) {
             return entuno - entdos;
         }
 
-        public double Mult(double entuno, double entdos) {
+        public float Mult(float entuno, float entdos) {
             return entuno * entdos;
         }
 
-        public double Div(double entuno, double entdos) {
+        public float Div(float entuno, float entdos) {
             try
             {
-                double salida = entuno / entdos;
+                float salida = entuno / entdos;
                 return salida;
             }
             catch (DivideByZeroException) {
-                return double.NaN;
+                return float.NaN;
             }
         }
 
