@@ -17,15 +17,37 @@ namespace Calculadora
         }
 
         public float Div(float entuno, float entdos) {
-            try
+            if (entdos != 0)
             {
-                float salida = entuno / entdos;
-                return salida;
+                return entuno / entdos;
             }
-            catch (DivideByZeroException) {
+            else {
                 return float.NaN;
             }
         }
 
+        public float Elev(float entuno, float potencia) {
+            return (float)Math.Pow(entuno,potencia);
+        }
+
+        public float Modu(float entuno, float entdos) {
+            if (entdos != 0)
+            {
+                return entuno % entdos;
+            }
+            else {
+                return float.NaN;
+            }
+        }
+
+        public float Raiz(float entuno, float raiz) {
+            if (raiz >= 0)
+            {
+                return (float)Math.Pow(entuno, (1 / raiz));
+            }
+            else {
+                return float.NaN;
+            }
+        }
     }
 }
